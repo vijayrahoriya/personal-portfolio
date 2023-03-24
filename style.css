@@ -1012,6 +1012,9 @@ media query
 }
 
 @media(max-width: 480px){
+    .home{
+        margin:20px 0;
+    }
     .home .info2{
         display: flex;
         flex-direction: column;
