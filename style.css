@@ -21,6 +21,10 @@ body.active .navbar a {
     color: #fff;
 }
 
+body.active .skillsbox{
+    background: #3e3d3d;
+}
+
 body.active .services .box {
     background: #3e3d3d;
 }
@@ -43,6 +47,14 @@ body.active .navbar a.active {
     color: skyblue;
 }
 
+
+body.active .services .box i{
+    color: #fff;
+}
+
+body.active .services .box a{
+    color: #fff;
+}
 
 body.active .home .scroll-down {
     background: #3e3d3d;
@@ -325,9 +337,19 @@ about section
 skills section 
 ------------------- */
 
+
 .skillsbox {
     width: 45%;
+    height: 65px;
+    overflow: hidden;
     cursor: pointer;
+    padding: 0 15px;
+    transition: height .4s ease-in-out;
+    background: lightgray;
+}
+
+.skillsbox.active{
+    height: auto;
 }
 
 .skills .field {
@@ -363,7 +385,7 @@ skills section
     margin-left: 30px;
 
 }
-
+/* 
 .bigbox {
     height: 0;
     overflow: hidden;
@@ -372,7 +394,7 @@ skills section
 
 .bigbox.active {
     height: auto;
-}
+} */
 
 .skillinfo .fa-chevron {
     transition: all .4s;
@@ -847,7 +869,7 @@ media query
     }
 
     .home {
-        /* height: 40vh; */
+        height: 60vh;
     }
 
     .home .content {
@@ -989,7 +1011,7 @@ media query
     }
 }
 
-@media(max-width: 400px){
+@media(max-width: 480px){
     .services .row{
         display: block;
     }

@@ -3,7 +3,7 @@ const skillBox = document.querySelectorAll('.skillsbox'),
 
 skillBox.forEach(box => {
     box.addEventListener('click', () => {
-        box.lastElementChild.classList.toggle('active')
+        box.classList.toggle('active')
         let icon = box.querySelector('.right i')
         icon.classList.contains('fa-chevron-down') ? icon.classList.replace('fa-chevron-down', 'fa-chevron-up') : icon.classList.replace('fa-chevron-up', 'fa-chevron-down')
     })
@@ -12,9 +12,9 @@ skillBox.forEach(box => {
 //navbar script ------------------------------------------------>
 
 const navbar = document.querySelector('.navbar'),
-lists = document.querySelectorAll('.navbar li a'),
-menuEl = document.querySelector('.menu'),
-menuItem = document.querySelector('.navbar .menu-item')
+    lists = document.querySelectorAll('.navbar li a'),
+    menuEl = document.querySelector('.menu'),
+    menuItem = document.querySelector('.navbar .menu-item')
 
 
 window.addEventListener('scroll', () => {
@@ -26,24 +26,24 @@ window.addEventListener('scroll', () => {
     }
 })
 
-lists.forEach(list=>{
-    list.addEventListener('click',()=>{
+lists.forEach(list => {
+    list.addEventListener('click', () => {
         menuItem.classList.remove('active');
-        navbar.querySelectorAll('.active').forEach(active=>{
+        navbar.querySelectorAll('.active').forEach(active => {
             active.classList.remove('active')
         })
         list.classList.add('active')
     })
 })
 
-menuEl.addEventListener('click',()=>{
+menuEl.addEventListener('click', () => {
     menuItem.classList.add('active');
 })
 
 //scrolldown btn script ----------------------------------------------->
 
 const scrollBtn = document.querySelector('.scroll-down');
-scrollBtn.addEventListener('click',()=>{
+scrollBtn.addEventListener('click', () => {
     document.querySelector('.lists li .aboutLink').click()
 })
 
@@ -112,13 +112,13 @@ let timer = setInterval(() => {
 
 const modeEl = document.querySelector('.mode a i');
 
-modeEl.addEventListener('click',(e)=>{
+modeEl.addEventListener('click', (e) => {
     e.preventDefault();
     document.body.classList.toggle('active')
-    if(modeEl.classList.contains('fa-moon')){
-        modeEl.classList.replace('fa-moon','fa-sun')
-    }else{
-        modeEl.classList.replace('fa-sun','fa-moon')
+    if (modeEl.classList.contains('fa-moon')) {
+        modeEl.classList.replace('fa-moon', 'fa-sun')
+    } else {
+        modeEl.classList.replace('fa-sun', 'fa-moon')
     }
 })
 
