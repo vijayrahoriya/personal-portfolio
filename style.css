@@ -8,12 +8,12 @@
 }
 
 body.active {
-    background: #210837;
+    background: #1b1b1b;
     color: #fff;
 }
 
 body.active .navbar {
-    background: #210837;
+    background: #1b1b1b;
     border-bottom: 1px solid #999;
 }
 
@@ -22,20 +22,20 @@ body.active .navbar a {
 }
 
 body.active .services .box {
-    background: #270347;
+    background: #3e3d3d;
 }
 
 body.active .services .modal {
-    background: #270347;
+    background: #3e3d3d;
 }
 
 body.active .contact-info .right input,
 body.active .contact-info .right textarea {
-    background: #270347;
+    background: #3e3d3d;
 }
 
 body.active .footer {
-    background: #210837;
+    background: #1b1b1b;
     border-top: 1px solid #999;
 }
 
@@ -45,12 +45,12 @@ body.active .navbar a.active {
 
 
 body.active .home .scroll-down {
-    background: #270347;
+    background: #3e3d3d;
     color: #fff;
 }
 
 body.active .navbar .menu-item{
-    background: #270347;
+    background: #3e3d3d;
 }
 
 html {
@@ -287,9 +287,10 @@ nav {
 }
 
 .home img {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: top;
     border-radius:39% 61% 93% 7% / 48% 47% 53% 52%;
 }
 
