@@ -346,6 +346,7 @@ skills section
     padding: 0 15px;
     transition: height .4s ease-in-out;
     background: #eeeeee;
+    border-radius: 3px;
 }
 
 .skillsbox.active{
@@ -1012,6 +1013,9 @@ media query
 }
 
 @media(max-width: 480px){
+    .modalbox{
+        margin: 0 15px;
+    }
     .home{
         margin:20px 0;
     }
