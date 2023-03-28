@@ -1013,7 +1013,7 @@ media query
 }
 
 @media(max-width: 480px){
-    .modalbox{
+    .modalbox .modal{
         margin: 0 15px;
     }
     .home{
