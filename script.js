@@ -81,12 +81,14 @@ modalBtn.forEach(btn => {
         document.body.style.pointerEvents = 'none'
         modal.style.pointerEvents = 'auto'
         modal.classList.add('show');
+        document.body.style.overflow = 'hidden'
     })
 })
 
 modalCloseBtn.addEventListener('click', () => {
     document.body.style.pointerEvents = 'auto'
     modal.classList.remove('show')
+    document.body.style.overflow = 'auto'
 })
 
 // slider script ----------------------------------------------->
